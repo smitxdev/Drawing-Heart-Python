@@ -1,3 +1,5 @@
+#Code Written & Commited By Smit Nikumbh Licensed #OX85Viopio
+
 import turtle
 wn = turtle.Screen()
 wn.setup(width=400, height=400)
@@ -24,3 +26,7 @@ heart()
 
 red.ht() # Hiding Turtle
 turtle.done()
+
+
+
+#**Supnistic A.I Project**#
