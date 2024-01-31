@@ -1,32 +1,20 @@
-#Code Written & Commited By Smit Nikumbh Licensed #OX85Viopio
-
 import turtle
-wn = turtle.Screen()
-wn.setup(width=400, height=400)
-red = turtle.Turtle() # Assigning "Red" as name of the turtle
 
-def curve(): # Method to draw curve
-    for i in range(200): # To draw the curve step by step
-        red.right(1)
-        red.forward(1)
+t=turtle.Turtle()
 
-def heart():  # Method to draw full Heart
-    red.fillcolor('red')
-    red.begin_fill()
-    red.left(140)
-    red.forward(113)
-    curve() # Left Curve
-    red.left(120)
-    curve() # Right Curve
-    red.forward(112)
-    red.end_fill()
+t.begin_fill()
+t.fillcolor("red")
+t.left(140)
+t.fd(180)
+t.circle(-90,200)
+t.setheading(60)
+t.circle(-90,200)
+t.fd(180)
+t.end_fill()
+t.up()
+t.goto(-200,-60)
+t.down()
+t.write("Happy Valentine Day Baby!",font=('arial',25,'bold'))
+t.hideturtle()
 
-
-heart()
-
-red.ht() # Hiding Turtle
-turtle.done()
-
-
-
-#**Supnistic A.I Project**#
+turtle.mainloop()
